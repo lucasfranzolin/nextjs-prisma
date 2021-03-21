@@ -1,9 +1,9 @@
 import { AppProps } from "next/app"
 import { StoreProvider } from "easy-peasy"
 
-import withStore from "../hocs/withStore"
+import withStore from "@hocs/withStore"
 
-import "../styles/globals.css"
+import "@styles/globals.css"
 
 export interface IMyAppProps extends AppProps {
   reduxStore: any

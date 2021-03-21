@@ -1,4 +1,11 @@
 {
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "directory": "."
+      }
+    }
+  },
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
@@ -6,7 +13,7 @@
     "plugin:prettier/react",
     "plugin:prettier/@typescript-eslint"
   ],
-  "plugins": ["@typescript-eslint","react", "prettier"],
+  "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
     "react/react-in-jsx-scope": "off"
   },

@@ -20,7 +20,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Prisma
 
-- Add prima globally: `npm i -G prisma`
+- Add prima globally: `yarn global add prisma`
 - Initialize primsa studio: `npx prisma studio --experimental`
 
 ### Migrations
