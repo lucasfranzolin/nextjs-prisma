@@ -1,9 +1,9 @@
 import { AppProps } from "next/app"
 import { StoreProvider } from "easy-peasy"
+import { ThemeProvider } from "styled-components"
 
 import withStore from "@hocs/withStore"
-
-import "@styles/globals.css"
+import themes from "@styles/themes"
 
 export interface IMyAppProps extends AppProps {
   reduxStore: any
@@ -12,7 +12,9 @@ export interface IMyAppProps extends AppProps {
 function MyApp({ Component, pageProps, reduxStore }: IMyAppProps) {
   return (
     <StoreProvider store={reduxStore}>
-      <Component {...pageProps} />
+      <ThemeProvider theme={themes[0]}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </StoreProvider>
   )
 }

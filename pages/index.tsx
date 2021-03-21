@@ -5,7 +5,7 @@ import { useEffect } from "react"
 import PrismaClient from "@db/client"
 import { User } from "@prisma/client"
 
-import { Button } from "@components/Button"
+import Button from "@components/Button"
 
 const prisma = PrismaClient.getInstance().prisma
 
