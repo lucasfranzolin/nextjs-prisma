@@ -8,15 +8,13 @@
 
 ## Helpers
 
-### Prisma
+### [Prisma](https://www.prisma.io/)
 
 - Add prisma globally: `yarn global add prisma`
 
-### Migrations
+  #### Migrations
 
-- Create: `prisma migrate dev --name <migration-name>`
-
-- [Getting started](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project-typescript-postgres)
+  - Create: `prisma migrate dev --name <migration-name>`
 
 ### easy-peasy
 

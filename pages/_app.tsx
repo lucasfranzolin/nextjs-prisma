@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components"
 import withStore from "@hocs/withStore"
 import themes from "@styles/themes"
 
+import "./_app.css"
+
 export interface IMyAppProps extends AppProps {
   reduxStore: any
 }

@@ -1,15 +1,18 @@
-import React from "react"
+import { ReactNode } from "react"
 
 import { StyledButton } from "./Button.styles"
 
 export interface ButtonProps {
-  primary?: boolean
-  backgroundColor?: string
-  size?: "small" | "medium" | "large"
-  label: string
+  variant: "primary" | "secondary" | "subtle" | "text"
+  children?: ReactNode
   onClick?: () => void
 }
 
-export const Button = ({ label, ...props }: ButtonProps) => {
-  return <StyledButton {...props}>{label}</StyledButton>
+export const Button = ({ variant, children, ...props }: ButtonProps) => {
+  const _variant = variant ?? "primary"
+  return (
+    <StyledButton variant={_variant} {...props}>
+      {children}
+    </StyledButton>
+  )
 }
